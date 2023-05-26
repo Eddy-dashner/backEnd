@@ -1,9 +1,9 @@
 import  express from "express";
 import bodyParser from "body-parser";
-import  createUser  from "../controllers/user.js";
+import  signIn from "../controllers/signin.js";
 
 
 const router = express.Router();
 router.use(bodyParser.json())
-router.post("/regiser",createUser)
+router.post("/signin",signIn)
 export default router

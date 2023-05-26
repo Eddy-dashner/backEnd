@@ -6,7 +6,8 @@ import articles from './routes/articles.js';
 import mongoose from 'mongoose'
 import names from './routes/articles.js'
 import dash from './routes/articles.js'
-import user from './routes/articles.js'
+import user from './routes/user.js'
+import signin from './routes/signIn.js';
 
 const app =express();
 app.use(cors());
@@ -18,6 +19,7 @@ app.use('/api/v1/articles', articles)
 app.use('/api/v1/',names)
 app.use('/api/v1/',dash)
 app.use('/api/v1',user)
+app.use('/api/v1',signin)
 
 
 
