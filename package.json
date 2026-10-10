@@ -6,8 +6,8 @@
   "type": "module",
   "scripts": {
     "compile": "babel-node index.js",
-    "dev": "nodemon --exec npm run compile",
-    "start": "babel-node index.js"
+    "dev": "node init && nodemon --exec npm run compile",
+    "start": "node init && babel-node index.js"
   },
   "author": "eddy",
   "license": "ISC",
